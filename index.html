@@ -9,9 +9,11 @@
        * https://commons.wikimedia.org/wiki/File:Transgender_Pride_flag.svg
        */
       body {
-        background-image: url("flag.svg");
+        background-image: url("pics/flag.svg");
         background-size: cover;
         min-height: 100vh;
+        padding: 0.5em;
+        margin: 0;
       }
 
       h1, h2 {
@@ -19,11 +21,19 @@
       }
 
       h1 {
-        font-size: 60px;
+        font-size: 3.75em;
       }
 
       h2 {
-        font-size: 40px;
+        font-size: 2.5em;
+      }
+
+      .gallery {
+        width: 100%;
+      }
+
+      .underline {
+        text-decoration: underline;
       }
 
       /* Rainbow title color taken from:
@@ -37,17 +47,18 @@
         background-clip: text;
         width: auto;
         margin: 0 auto;
-        padding: 0 10px;
+        padding: 0 0.1em;  /* this is calculated relative to the (large) font
+                              size of this element */
         display: inline;
       }
 
       .background {
         background-color: rgba(198, 193, 255, 1.0);
         border-style: ridge;
-        border-width: 3px;
+        border-width: 0.1875em;
         /* height: 100vh; */
         top: 0;
-        padding: 15px;
+        padding: 0.9375em;
       }
 
       p {
@@ -64,15 +75,17 @@
 
       .body-paragraphs {
         display: inline-block;
-        max-width: 800px;
+        max-width: 50em;
       }
     </style>
   </head>
   <body>
     <div class="center-contents">
       <div class="body-paragraphs background">
+
+        <!-- INTRO -->
         <div class="center-contents">
-          <h1 class="rainbow">
+          <h1 id="section-title" class="rainbow">
             Friends of Shelly
           </h1>
         </div>
@@ -83,7 +96,7 @@
           discussion focusing on a specific trans-related topic. After that, we
           just hang out and chat over snacks.  We're graciously hosted by the very
           LGBTQA+ supportive
-          <a href="https://stlukeinthefields.org/event/1154889-2018-06-07-friends-of-shelly">The Church of St. Luke in the Fields</a>,
+          <a href="https://stlukeinthefields.org/event/1154889-2018-06-07-friends-of-shelly">Church of St. Luke in the Fields</a>,
           but the event itself is secular in nature and welcoming to people of all
           religious beliefs and backgrounds.
           Come and talk with us about hormones, family, favorite coding
@@ -94,14 +107,21 @@
           open you are about your gender, however uncertain you are about where you
           are heading, <strong>you are welcome here.</strong>
         </p>
-        <h2>Event Details</h2>
+
+        <!-- EVENT DETAILS -->
+        <h2 id="section-details">Event Details</h2>
         <p><strong><em>Time:</em></strong> <em>7:30-9:30pm every Thursday</em></p>
         <p><strong><em>Location:</em></strong></p>
         <p>
           <strong>
             <em>
-              <a href="https://stlukeinthefields.org/event/1154889-2018-06-07-friends-of-shelly">The Church of St. Luke in the Fields</a><br>
+              <a href="https://stlukeinthefields.org/event/1154889-2018-06-07-friends-of-shelly">The Church of St. Luke in the Fields</a>,
+              Laughlin Hall
             </em>
+            (<a href="#pic-shelly">See</a>
+            <a href="#pic-entrance">pics</a>
+            <a href="#pic-courtyard">below</a>).
+            <br>
             <a href="https://www.google.com/maps/place/The+Church+of+St.+Luke+in+the+Fields/@40.7325862,-74.0067038,15z/data=!4m5!3m4!1s0x0:0x87a8c54d863b2586!8m2!3d40.7325862!4d-74.0067038" title="487 Hudson Street New York, NY 10014">487 Hudson Street New York, NY 10014</a><br>
           </strong>
           <em>
@@ -109,6 +129,42 @@
             the courtyard!
           </em>
         </p>
+
+        <!-- PHOTOS -->
+        <h2 id="section-photos">Photos</h2>
+        <p>Here are some photos from our events!</p>
+        <p>
+          <em>
+            (Note, just in case you're worried about anonymity:
+            <span class="underline">we won't post pics of you here without your permission</span>.
+            We want this to be a safe and private space for trans people.)
+          </em>
+        </p>
+        <figure id="pic-shelly">
+          <img src="pics/shelly.jpg" alt="Shelly Mayron, founder" class="gallery">
+          <figcaption>
+            The eponymous
+            <a href="http://www.affordablepermanentelectrolysis.com/">Shelly Mayron</a>,
+            founder and main organizer of Friends of Shelly.
+          </figcaption>
+        </figure>
+        <figure id="pic-entrance">
+          <img src="pics/entrance.jpg" alt="Gay pride flag at the entrance" class="gallery">
+          <figcaption>
+            The gay pride flag hanging just above the entrance to the courtyard
+            on Hudson St. (by the intersection with Christopher St.).
+          </figcaption>
+        </figure>
+        <figure id="pic-courtyard">
+          <img src="pics/courtyard.jpg" alt="The courtyard; meeting at the back" class="gallery">
+          <figcaption>
+            The courtyard just inside the entrance to St. Luke's. Laughlin Hall
+            is the building in the background (the entrance is in the middle of
+            the photo behind some trees).
+          </figcaption>
+        </figure>
+
+        <!-- WEBMASTER CREDITS -->
         <hr>
         <p>
           <em>
