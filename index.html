@@ -17,14 +17,8 @@
 
     <!-- inline style sheet -->
     <style>
-      /* flag from wikipedia
-       * https://commons.wikimedia.org/wiki/File:Transgender_Pride_flag.svg
-       */
       body {
-        background-image: url("pics/flag.svg");
-        background-size: cover;
-        min-height: 100vh;
-        padding: 0.5em;
+        padding: 0;
         margin: 0;
       }
 
@@ -105,7 +99,6 @@
         background-color: rgba(198, 193, 255, 1.0);
         border-style: ridge;
         border-width: 0.1875em;
-        /* height: 100vh; */
         top: 0;
         padding: 0.9375em;
       }
@@ -119,6 +112,7 @@
        */
       .center-contents {
         /* padding: 0 auto; */
+        margin: 0.5em;
         text-align: center;
       }
 
@@ -126,9 +120,26 @@
         display: inline-block;
         max-width: 50em;
       }
+
+      #background-holder {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100vh;
+      }
     </style>
   </head>
   <body>
+    <!-- FLAG BACKGROUND IMAGE -->
+    <!-- https://commons.wikimedia.org/wiki/File:Transgender_Pride_flag.svg -->
+    <svg id="background-holder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10000 480">
+      <path fill="#5BCEFA" d="M0 0h10000v480H0z"/>
+      <path fill="#F5A9B8" d="M0 96h10000v288H0z"/>
+      <path fill="#FFF" d="M0 192h10000v96H0z"/>
+    </svg>
+
+    <!-- MAIN BODY -->
     <div class="center-contents">
       <div class="body-paragraphs background">
 
